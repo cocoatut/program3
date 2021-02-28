@@ -3,6 +3,7 @@ import Text from './page1'
 import Table from './page4'
 import Video from './page3'
 import Email from './page5'
+import Photo from './page2'
 //import './syle.css'
 
 class Body extends Component{
@@ -11,6 +12,9 @@ class Body extends Component{
             var activetab = this.props.activetab;
             if(activetab==1){
                 return <Text/>
+            }
+            if(activetab==2){
+                return <Photo/>
             }
             if(activetab==3){
                 return <Video/>
